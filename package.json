@@ -13,7 +13,8 @@
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
     "node-google-image-search": "^1.0.3",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "update-mongo": "0.0.4"
   },
   "main": "app.js",
   "devDependencies": {},
