@@ -2,4 +2,22 @@ extends layout
 
 block content
   h1= title
-  
+   br
+    p Example creation usage:
+    code  https://images-search.herokuapp.com/imageSearch/lolcats funny
+    p Example creation output:
+    code     {
+        "url": "https://i.ytimg.com/vi/dWpGC6Fg0io/hqdefault.jpg",
+        "snippet": "... LOLCats Funny Cats",
+        "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNMCLSl2dHm87xTU6uMFZD0Jym2E-4lAaSdJzfc_6OkeB_CdF1vjgZZsR2",
+        "context": "https://www.youtube.com/watch?v=dWpGC6Fg0io"
+    }
+    p Example finding latest search:
+    code https://images-search.herokuapp.com/latest
+    p Example output:
+    code {
+
+    "term": "dogs",
+    "when": "2017-01-24T14:17:12.610Z"
+
+}

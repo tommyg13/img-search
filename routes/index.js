@@ -1,5 +1,9 @@
 
 module.exports = function(app, db) {
+   app.get('/', function(req, res, next) {
+  res.render('index', { title: 'Image search' });
+});
+    
     require("dotenv").config();
     var imageSearch = require('node-google-image-search');
 app.get("/imageSearch/:query*",function(req,res){
@@ -8,10 +12,10 @@ app.get("/imageSearch/:query*",function(req,res){
     var url="";
     
     if(offset) {
-        url="https://images-earch-abstractionlayer-gkazikas.c9users.io/imageSearch/"+query+offset;
+        url="https://images-search.herokuapp.com/imageSearch/"+query+offset;
     }
     else{
-        url="https://images-earch-abstractionlayer-gkazikas.c9users.io/imageSearch/"+query;
+        url="https://images-search.herokuapp.com/imageSearch/"+query;
        
     }
      imageSearch(query, callback, 2, 10);
